@@ -292,6 +292,71 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "order history",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/order-history?start_date=2022-01-01&end_date=2022-01-01&customer_id=1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"order-history"
+					],
+					"query": [
+						{
+							"key": "start_date",
+							"value": "2022-01-01"
+						},
+						{
+							"key": "end_date",
+							"value": "2022-01-01"
+						},
+						{
+							"key": "customer_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "generate report",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/generate-report",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"generate-report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retrive products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/retrive-products",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"retrive-products"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

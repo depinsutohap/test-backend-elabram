@@ -41,6 +41,11 @@ func Route() {
 	r.DELETE("/categories/:id", deleteCategory)
 
 	r.GET("/dashboard", dashboardProduct)
+
+	r.GET("/retrive-products", retriveAllProduct)
+	r.GET("/generate-report", getTopCustomers)
+	r.GET("/order-history", getOrderHistory)
+
 	// Start the server
 	r.Run(":8080")
 
